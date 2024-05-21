@@ -1,6 +1,6 @@
 import getConnection from "../connection/connection.js";
 
-const dewandisplay = async (req, res) => {
+const dewandisplay = async (req, res) => { 
     let conn;
     try {
         conn = await getConnection();

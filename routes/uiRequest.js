@@ -1,12 +1,14 @@
 import express from "express";
-import dewandisplay from "../controller/dewandisplay.js";
+import dewanDisplay from "../controller/dewandisplay.js";
+import orderDisplay from "../controller/admin/orderDisplay.js"
 
 const reqRouter = express.Router();
 
 //post request
 
 //get request
-reqRouter.get('/dewandisplay', dewandisplay)
+reqRouter.get('/dewandisplay', dewanDisplay);
+reqRouter.get('/orderdisplay', orderDisplay)
 //put request
 
 //delete request

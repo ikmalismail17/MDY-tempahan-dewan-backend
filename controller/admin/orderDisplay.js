@@ -9,6 +9,7 @@ const orderDisplay = async (req, res) => {
             `SELECT 
                 dewan_order.order_id,
                 dewan_order.order_desc,
+                dewan_order.order_explain,
                 DATE_FORMAT(dewan_order.order_date, '%Y-%m-%d') AS order_date,
                 DATE_FORMAT(dewan_order.dewan_order_date, '%Y-%m-%d') AS dewan_order_date,
                 dewan_order.order_status,
